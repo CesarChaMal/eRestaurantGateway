@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "usersmsRestaurantUser": {
+      "home": {
+        "title": "RestaurantUsers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Genera un nuovo Restaurant User",
+        "createOrEditLabel": "Genera o modifica un Restaurant User",
+        "notFound": "No Restaurant Users found"
+      },
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Restaurant User {{ id }}?"
+      },
+      "detail": {
+        "title": "Restaurant User"
+      },
+      "id": "Id",
+      "internalUser": "Internal User"
+    }
+  },
+  "usersmsApp": {
+    "usersmsRestaurantUser": {
+      "created": "&Egrave; stato generato un nuovo Restaurant User con identificatore { param }}",
+      "updated": "&Egrave; stato aggiornato Restaurant User identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Restaurant User con identificatore {{ param }}"
+    }
+  }
+}
