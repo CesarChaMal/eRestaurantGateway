@@ -2,6 +2,12 @@
   "generator-jhipster": {
     "applicationIndex": 0,
     "applicationType": "gateway",
+    "applications": {
+      "eRestaurantUsers": {
+        "applicationIndex": 1,
+        "serverPort": "8082"
+      }
+    },
     "authenticationType": "oauth2",
     "baseName": "eRestaurantGateway",
     "blueprints": [],
@@ -11,7 +17,7 @@
     "clientPackageManager": "npm",
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "creationTimestamp": 1648760477300,
+    "creationTimestamp": 1649237554728,
     "databaseType": "sql",
     "devDatabaseType": "h2Disk",
     "devServerPort": 4200,
@@ -25,9 +31,9 @@
     "gradleEnterpriseHost": "",
     "jhiPrefix": "jhi",
     "jhipsterVersion": "7.7.0",
-    "jwtSecretKey": "NWJiODI2NDhhZmZiZDIxYjcwNDBjMzk4NDY3Mzc5N2VjYzRhZDhiYzc4YjM0MzllMGY2NTYwMTRjOWVlZGQ2YjlhZmM1ZjJjMjk2YjViNmI0ZDJkZTczODU0YWU4NjhkMzkxZmM0OWM1MGQwYjQyNjJlZWU2ODViZWNlYjUxMTc=",
+    "jwtSecretKey": "NzcyYWQwMWFlNjdhODY1Nzc1NzI2MTcyOWRiODU5ZTYwNmY3NGIyZDQ3NzBiZWIxZTNlODcwMjc5YmJlYzA1MWQ1OTc2YmU4ZmY1NmMwYzE0NTJmMzM4MzVmYzFlMjQ2MGE1NWFlMzA2OTZkYTNkMWY4ZWUwOTMwOWIwMWZiMTc=",
     "languages": ["en", "pl", "fr", "es", "de", "it", "ro"],
-    "lastLiquibaseTimestamp": 1648760537000,
+    "lastLiquibaseTimestamp": 1649237614000,
     "messageBroker": "kafka",
     "monorepository": true,
     "nativeLanguage": "en",

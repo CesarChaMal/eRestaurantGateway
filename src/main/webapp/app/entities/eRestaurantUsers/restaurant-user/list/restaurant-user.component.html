@@ -1,11 +1,11 @@
 <div>
   <h2 id="page-heading" data-cy="RestaurantUserHeading">
-    <span jhiTranslate="eRestaurantGatewayApp.usersmsRestaurantUser.home.title">Restaurant Users</span>
+    <span jhiTranslate="eRestaurantGatewayApp.eRestaurantUsersRestaurantUser.home.title">Restaurant Users</span>
 
     <div class="d-flex justify-content-end">
       <button class="btn btn-info me-2" (click)="loadPage()" [disabled]="isLoading">
         <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
-        <span jhiTranslate="eRestaurantGatewayApp.usersmsRestaurantUser.home.refreshListLabel">Refresh List</span>
+        <span jhiTranslate="eRestaurantGatewayApp.eRestaurantUsersRestaurantUser.home.refreshListLabel">Refresh List</span>
       </button>
 
       <button
@@ -15,7 +15,7 @@
         [routerLink]="['/restaurant-user/new']"
       >
         <fa-icon icon="plus"></fa-icon>
-        <span jhiTranslate="eRestaurantGatewayApp.usersmsRestaurantUser.home.createLabel"> Create a new Restaurant User </span>
+        <span jhiTranslate="eRestaurantGatewayApp.eRestaurantUsersRestaurantUser.home.createLabel"> Create a new Restaurant User </span>
       </button>
     </div>
   </h2>
@@ -25,7 +25,7 @@
   <jhi-alert></jhi-alert>
 
   <div class="alert alert-warning" id="no-result" *ngIf="restaurantUsers?.length === 0">
-    <span jhiTranslate="eRestaurantGatewayApp.usersmsRestaurantUser.home.notFound">No restaurantUsers found</span>
+    <span jhiTranslate="eRestaurantGatewayApp.eRestaurantUsersRestaurantUser.home.notFound">No restaurantUsers found</span>
   </div>
 
   <div class="table-responsive" id="entities" *ngIf="restaurantUsers && restaurantUsers.length > 0">
@@ -33,10 +33,23 @@
       <thead>
         <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" (sortChange)="loadPage()">
           <th scope="col" jhiSortBy="id">
-            <span jhiTranslate="eRestaurantGatewayApp.usersmsRestaurantUser.id">Id</span> <fa-icon icon="sort"></fa-icon>
+            <span jhiTranslate="eRestaurantGatewayApp.eRestaurantUsersRestaurantUser.id">Id</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="name">
+            <span jhiTranslate="eRestaurantGatewayApp.eRestaurantUsersRestaurantUser.name">Name</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="description">
+            <span jhiTranslate="eRestaurantGatewayApp.eRestaurantUsersRestaurantUser.description">Description</span>
+            <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="image">
+            <span jhiTranslate="eRestaurantGatewayApp.eRestaurantUsersRestaurantUser.image">Image</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="email">
+            <span jhiTranslate="eRestaurantGatewayApp.eRestaurantUsersRestaurantUser.email">Email</span> <fa-icon icon="sort"></fa-icon>
           </th>
           <th scope="col" jhiSortBy="internalUser.login">
-            <span jhiTranslate="eRestaurantGatewayApp.usersmsRestaurantUser.internalUser">Internal User</span>
+            <span jhiTranslate="eRestaurantGatewayApp.eRestaurantUsersRestaurantUser.internalUser">Internal User</span>
             <fa-icon icon="sort"></fa-icon>
           </th>
           <th scope="col"></th>
@@ -47,6 +60,19 @@
           <td>
             <a [routerLink]="['/restaurant-user', restaurantUser.id, 'view']">{{ restaurantUser.id }}</a>
           </td>
+          <td>{{ restaurantUser.name }}</td>
+          <td>{{ restaurantUser.description }}</td>
+          <td>
+            <a *ngIf="restaurantUser.image" (click)="openFile(restaurantUser.image, restaurantUser.imageContentType)">
+              <img
+                [src]="'data:' + restaurantUser.imageContentType + ';base64,' + restaurantUser.image"
+                style="max-height: 30px"
+                alt="restaurantUser image"
+              />
+            </a>
+            <span *ngIf="restaurantUser.image">{{ restaurantUser.imageContentType }}, {{ byteSize(restaurantUser.image) }}</span>
+          </td>
+          <td>{{ restaurantUser.email }}</td>
           <td>
             {{ restaurantUser.internalUser?.login }}
           </td>

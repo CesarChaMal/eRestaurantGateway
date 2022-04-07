@@ -17,8 +17,8 @@ services:
     volumes:
       - ./realm-config:/opt/jboss/keycloak/realm-config
     environment:
-#      - KEYCLOAK_USER=admin
-#      - KEYCLOAK_PASSWORD=admin
+      - KEYCLOAK_USER=admin
+      - KEYCLOAK_PASSWORD=admin
       - DB_VENDOR=h2
     # If you want to expose these ports outside your dev PC,
     # remove the "127.0.0.1:" prefix

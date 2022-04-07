@@ -1,6 +1,6 @@
 {
   "eRestaurantGatewayApp": {
-    "usersmsRestaurantUser": {
+    "eRestaurantUsersRestaurantUser": {
       "home": {
         "title": "Restaurant User",
         "refreshListLabel": "Refresh list",
@@ -15,11 +15,15 @@
         "title": "Restaurant User"
       },
       "id": "Id",
+      "name": "Name",
+      "description": "Description",
+      "image": "Image",
+      "email": "Email",
       "internalUser": "Internal User"
     }
   },
-  "usersmsApp": {
-    "usersmsRestaurantUser": {
+  "eRestaurantUsersApp": {
+    "eRestaurantUsersRestaurantUser": {
       "created": "Utworzono nowy obiekt typu Restaurant User z identyfikatorem {{ param }}",
       "updated": "Uaktualniono obiekt typu Restaurant User z identyfikatorem {{ param }}",
       "deleted": "Usunięto obiekt typu Restaurant User z identyfikatorem {{ param }}"

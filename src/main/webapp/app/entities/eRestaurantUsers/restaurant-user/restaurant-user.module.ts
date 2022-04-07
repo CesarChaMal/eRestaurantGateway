@@ -16,4 +16,4 @@ import { RestaurantUserRoutingModule } from './route/restaurant-user-routing.mod
   ],
   entryComponents: [RestaurantUserDeleteDialogComponent],
 })
-export class UsersmsRestaurantUserModule {}
+export class ERestaurantUsersRestaurantUserModule {}

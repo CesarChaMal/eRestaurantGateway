@@ -9,6 +9,7 @@ import { IRestaurantUser } from '../restaurant-user.model';
 import { ASC, DESC, ITEMS_PER_PAGE, SORT } from 'app/config/pagination.constants';
 import { RestaurantUserService } from '../service/restaurant-user.service';
 import { RestaurantUserDeleteDialogComponent } from '../delete/restaurant-user-delete-dialog.component';
+import { DataUtils } from 'app/core/util/data-util.service';
 
 @Component({
   selector: 'jhi-restaurant-user',
@@ -27,6 +28,7 @@ export class RestaurantUserComponent implements OnInit {
   constructor(
     protected restaurantUserService: RestaurantUserService,
     protected activatedRoute: ActivatedRoute,
+    protected dataUtils: DataUtils,
     protected router: Router,
     protected modalService: NgbModal
   ) {}
@@ -59,6 +61,14 @@ export class RestaurantUserComponent implements OnInit {
 
   trackId(index: number, item: IRestaurantUser): string {
     return item.id!;
+  }
+
+  byteSize(base64String: string): string {
+    return this.dataUtils.byteSize(base64String);
+  }
+
+  openFile(base64String: string, contentType: string | null | undefined): void {
+    return this.dataUtils.openFile(base64String, contentType);
   }
 
   delete(restaurantUser: IRestaurantUser): void {

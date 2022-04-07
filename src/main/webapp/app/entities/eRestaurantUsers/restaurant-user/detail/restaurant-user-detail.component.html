@@ -1,0 +1,59 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="restaurantUser">
+      <h2 data-cy="restaurantUserDetailsHeading">
+        <span jhiTranslate="eRestaurantGatewayApp.eRestaurantUsersRestaurantUser.detail.title">Restaurant User</span>
+      </h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="eRestaurantGatewayApp.eRestaurantUsersRestaurantUser.id">Id</span></dt>
+        <dd>
+          <span>{{ restaurantUser.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="eRestaurantGatewayApp.eRestaurantUsersRestaurantUser.name">Name</span></dt>
+        <dd>
+          <span>{{ restaurantUser.name }}</span>
+        </dd>
+        <dt><span jhiTranslate="eRestaurantGatewayApp.eRestaurantUsersRestaurantUser.description">Description</span></dt>
+        <dd>
+          <span>{{ restaurantUser.description }}</span>
+        </dd>
+        <dt><span jhiTranslate="eRestaurantGatewayApp.eRestaurantUsersRestaurantUser.image">Image</span></dt>
+        <dd>
+          <div *ngIf="restaurantUser.image">
+            <a (click)="openFile(restaurantUser.image, restaurantUser.imageContentType)">
+              <img
+                [src]="'data:' + restaurantUser.imageContentType + ';base64,' + restaurantUser.image"
+                style="max-width: 100%"
+                alt="restaurantUser image"
+              />
+            </a>
+            {{ restaurantUser.imageContentType }}, {{ byteSize(restaurantUser.image) }}
+          </div>
+        </dd>
+        <dt><span jhiTranslate="eRestaurantGatewayApp.eRestaurantUsersRestaurantUser.email">Email</span></dt>
+        <dd>
+          <span>{{ restaurantUser.email }}</span>
+        </dd>
+        <dt><span jhiTranslate="eRestaurantGatewayApp.eRestaurantUsersRestaurantUser.internalUser">Internal User</span></dt>
+        <dd>
+          <span>{{ restaurantUser.internalUser?.login }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/restaurant-user', restaurantUser.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

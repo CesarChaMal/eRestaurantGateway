@@ -5,7 +5,7 @@ import { IRestaurantUser, RestaurantUser } from '../restaurant-user.model';
 
 import { RestaurantUserService } from './restaurant-user.service';
 
-describe('RestaurantUser Service', () => {
+describe('RestaurantUserService', () => {
   let service: RestaurantUserService;
   let httpMock: HttpTestingController;
   let elemDefault: IRestaurantUser;
@@ -21,6 +21,11 @@ describe('RestaurantUser Service', () => {
 
     elemDefault = {
       id: 'AAAAAAA',
+      name: 'AAAAAAA',
+      description: 'AAAAAAA',
+      imageContentType: 'image/png',
+      image: 'AAAAAAA',
+      email: 'AAAAAAA',
     };
   });
 
@@ -56,6 +61,10 @@ describe('RestaurantUser Service', () => {
       const returnedFromService = Object.assign(
         {
           id: 'BBBBBB',
+          name: 'BBBBBB',
+          description: 'BBBBBB',
+          image: 'BBBBBB',
+          email: 'BBBBBB',
         },
         elemDefault
       );
@@ -70,7 +79,13 @@ describe('RestaurantUser Service', () => {
     });
 
     it('should partial update a RestaurantUser', () => {
-      const patchObject = Object.assign({}, new RestaurantUser());
+      const patchObject = Object.assign(
+        {
+          description: 'BBBBBB',
+          image: 'BBBBBB',
+        },
+        new RestaurantUser()
+      );
 
       const returnedFromService = Object.assign(patchObject, elemDefault);
 
@@ -87,6 +102,10 @@ describe('RestaurantUser Service', () => {
       const returnedFromService = Object.assign(
         {
           id: 'BBBBBB',
+          name: 'BBBBBB',
+          description: 'BBBBBB',
+          image: 'BBBBBB',
+          email: 'BBBBBB',
         },
         elemDefault
       );
@@ -138,7 +157,7 @@ describe('RestaurantUser Service', () => {
       });
 
       it('should add only unique RestaurantUser to an array', () => {
-        const restaurantUserArray: IRestaurantUser[] = [{ id: 'ABC' }, { id: 'CBA' }, { id: '1982bc56-daf5-4faa-9220-826c29c3e831' }];
+        const restaurantUserArray: IRestaurantUser[] = [{ id: 'ABC' }, { id: 'CBA' }, { id: 'bc56daf5-faa9-4220-826c-29c3e8319f36' }];
         const restaurantUserCollection: IRestaurantUser[] = [{ id: 'ABC' }];
         expectedResult = service.addRestaurantUserToCollectionIfMissing(restaurantUserCollection, ...restaurantUserArray);
         expect(expectedResult).toHaveLength(3);
