@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantAdminRole": {
+      "home": {
+        "title": "Roles",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Role",
+        "createOrEditLabel": "Creeare sau editare Role",
+        "notFound": "No Roles found"
+      },
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Role {{ id }}?"
+      },
+      "detail": {
+        "title": "Role"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantAdminApp": {
+    "eRestaurantAdminRole": {
+      "created": "A fost creată o nouă entitate Role cu identificatorul {{ param }}",
+      "updated": "Entitatea Role cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Entitatea Role cu identificatorul {{ param }} a fost ștearsă"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantRestaurantNotification": {
+      "home": {
+        "title": "Notifications",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Genera un nuovo Notification",
+        "createOrEditLabel": "Genera o modifica un Notification",
+        "notFound": "No Notifications found"
+      },
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Notification {{ id }}?"
+      },
+      "detail": {
+        "title": "Notification"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantRestaurantApp": {
+    "eRestaurantRestaurantNotification": {
+      "created": "&Egrave; stato generato un nuovo Notification con identificatore { param }}",
+      "updated": "&Egrave; stato aggiornato Notification identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Notification con identificatore {{ param }}"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerComplete": {
+      "home": {
+        "title": "Completes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Complete",
+        "createOrEditLabel": "Creeare sau editare Complete",
+        "notFound": "No Completes found"
+      },
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Complete {{ id }}?"
+      },
+      "detail": {
+        "title": "Complete"
+      },
+      "id": "Id",
+      "description": "Description",
+      "enabled": "Enabled"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerComplete": {
+      "created": "A fost creată o nouă entitate Complete cu identificatorul {{ param }}",
+      "updated": "Entitatea Complete cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Entitatea Complete cu identificatorul {{ param }} a fost ștearsă"
+    }
+  }
+}

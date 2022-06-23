@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerState": {
+      "home": {
+        "title": "States",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "State erstellen",
+        "createOrEditLabel": "State erstellen oder bearbeiten",
+        "notFound": "Keine States gefunden"
+      },
+      "delete": {
+        "question": "Soll State {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "State"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerState": {
+      "created": "State erstellt mit ID {{ param }}",
+      "updated": "State aktualisiert mit ID {{ param }}",
+      "deleted": "State gelöscht mit ID {{ param }}"
+    }
+  }
+}

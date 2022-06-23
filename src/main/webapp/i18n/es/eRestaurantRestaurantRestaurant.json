@@ -1,0 +1,32 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantRestaurantRestaurant": {
+      "home": {
+        "title": "Restaurants",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Restaurant",
+        "createOrEditLabel": "Crear o editar Restaurant",
+        "notFound": "Ningún Restaurants encontrado"
+      },
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Restaurant {{ id }}?"
+      },
+      "detail": {
+        "title": "Restaurant"
+      },
+      "id": "Id",
+      "name": "Name",
+      "description": "Description",
+      "image": "Image",
+      "email": "Email",
+      "rating": "Rating"
+    }
+  },
+  "eRestaurantRestaurantApp": {
+    "eRestaurantRestaurantRestaurant": {
+      "created": "Un nuevo Restaurant ha sido creado con el identificador {{ param }}",
+      "updated": "Un Restaurant ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Restaurant ha sido eliminado con el identificador {{ param }}"
+    }
+  }
+}

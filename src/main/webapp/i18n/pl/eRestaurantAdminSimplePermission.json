@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantAdminSimplePermission": {
+      "home": {
+        "title": "Simple Permission",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Dodaj Simple Permission",
+        "createOrEditLabel": "Dodaj lub edytuj: Simple Permission",
+        "notFound": "No Simple Permissions found"
+      },
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Simple Permission {{ id }}?"
+      },
+      "detail": {
+        "title": "Simple Permission"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantAdminApp": {
+    "eRestaurantAdminSimplePermission": {
+      "created": "Utworzono nowy obiekt typu Simple Permission z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Simple Permission z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Simple Permission z identyfikatorem {{ param }}"
+    }
+  }
+}

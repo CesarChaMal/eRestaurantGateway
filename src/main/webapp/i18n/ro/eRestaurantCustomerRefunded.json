@@ -1,0 +1,29 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerRefunded": {
+      "home": {
+        "title": "Refundeds",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Refunded",
+        "createOrEditLabel": "Creeare sau editare Refunded",
+        "notFound": "No Refundeds found"
+      },
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Refunded {{ id }}?"
+      },
+      "detail": {
+        "title": "Refunded"
+      },
+      "id": "Id",
+      "description": "Description",
+      "enabled": "Enabled"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerRefunded": {
+      "created": "A fost creată o nouă entitate Refunded cu identificatorul {{ param }}",
+      "updated": "Entitatea Refunded cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Entitatea Refunded cu identificatorul {{ param }} a fost ștearsă"
+    }
+  }
+}

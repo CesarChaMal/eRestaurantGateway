@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerCart": {
+      "home": {
+        "title": "Carts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Cart",
+        "createOrEditLabel": "Creeare sau editare Cart",
+        "notFound": "No Carts found"
+      },
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Cart {{ id }}?"
+      },
+      "detail": {
+        "title": "Cart"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerCart": {
+      "created": "A fost creată o nouă entitate Cart cu identificatorul {{ param }}",
+      "updated": "Entitatea Cart cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Entitatea Cart cu identificatorul {{ param }} a fost ștearsă"
+    }
+  }
+}

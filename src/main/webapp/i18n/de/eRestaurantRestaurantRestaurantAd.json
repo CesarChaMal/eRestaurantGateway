@@ -1,0 +1,29 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantRestaurantRestaurantAd": {
+      "home": {
+        "title": "Restaurant Ads",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Restaurant Ad erstellen",
+        "createOrEditLabel": "Restaurant Ad erstellen oder bearbeiten",
+        "notFound": "Keine Restaurant Ads gefunden"
+      },
+      "delete": {
+        "question": "Soll Restaurant Ad {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Restaurant Ad"
+      },
+      "id": "Id",
+      "url": "Url",
+      "description": "Description"
+    }
+  },
+  "eRestaurantRestaurantApp": {
+    "eRestaurantRestaurantRestaurantAd": {
+      "created": "Restaurant Ad erstellt mit ID {{ param }}",
+      "updated": "Restaurant Ad aktualisiert mit ID {{ param }}",
+      "deleted": "Restaurant Ad gelöscht mit ID {{ param }}"
+    }
+  }
+}

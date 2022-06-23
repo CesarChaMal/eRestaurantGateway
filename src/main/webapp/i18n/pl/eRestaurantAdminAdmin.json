@@ -1,0 +1,31 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantAdminAdmin": {
+      "home": {
+        "title": "Admin",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Dodaj Admin",
+        "createOrEditLabel": "Dodaj lub edytuj: Admin",
+        "notFound": "No Admins found"
+      },
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Admin {{ id }}?"
+      },
+      "detail": {
+        "title": "Admin"
+      },
+      "id": "Id",
+      "name": "Name",
+      "description": "Description",
+      "image": "Image",
+      "email": "Email"
+    }
+  },
+  "eRestaurantAdminApp": {
+    "eRestaurantAdminAdmin": {
+      "created": "Utworzono nowy obiekt typu Admin z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Admin z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Admin z identyfikatorem {{ param }}"
+    }
+  }
+}

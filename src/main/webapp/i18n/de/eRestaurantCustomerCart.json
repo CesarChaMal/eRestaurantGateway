@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerCart": {
+      "home": {
+        "title": "Carts",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Cart erstellen",
+        "createOrEditLabel": "Cart erstellen oder bearbeiten",
+        "notFound": "Keine Carts gefunden"
+      },
+      "delete": {
+        "question": "Soll Cart {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Cart"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerCart": {
+      "created": "Cart erstellt mit ID {{ param }}",
+      "updated": "Cart aktualisiert mit ID {{ param }}",
+      "deleted": "Cart gelöscht mit ID {{ param }}"
+    }
+  }
+}

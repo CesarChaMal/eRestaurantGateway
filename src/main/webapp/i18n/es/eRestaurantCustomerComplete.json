@@ -1,0 +1,29 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerComplete": {
+      "home": {
+        "title": "Completes",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Complete",
+        "createOrEditLabel": "Crear o editar Complete",
+        "notFound": "Ningún Completes encontrado"
+      },
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Complete {{ id }}?"
+      },
+      "detail": {
+        "title": "Complete"
+      },
+      "id": "Id",
+      "description": "Description",
+      "enabled": "Enabled"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerComplete": {
+      "created": "Un nuevo Complete ha sido creado con el identificador {{ param }}",
+      "updated": "Un Complete ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Complete ha sido eliminado con el identificador {{ param }}"
+    }
+  }
+}

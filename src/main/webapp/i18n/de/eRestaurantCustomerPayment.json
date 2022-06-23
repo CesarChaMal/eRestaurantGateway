@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerPayment": {
+      "home": {
+        "title": "Payments",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Payment erstellen",
+        "createOrEditLabel": "Payment erstellen oder bearbeiten",
+        "notFound": "Keine Payments gefunden"
+      },
+      "delete": {
+        "question": "Soll Payment {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerPayment": {
+      "created": "Payment erstellt mit ID {{ param }}",
+      "updated": "Payment aktualisiert mit ID {{ param }}",
+      "deleted": "Payment gelöscht mit ID {{ param }}"
+    }
+  }
+}

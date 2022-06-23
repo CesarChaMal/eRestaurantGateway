@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerCart": {
+      "home": {
+        "title": "Carts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Genera un nuovo Cart",
+        "createOrEditLabel": "Genera o modifica un Cart",
+        "notFound": "No Carts found"
+      },
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Cart {{ id }}?"
+      },
+      "detail": {
+        "title": "Cart"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerCart": {
+      "created": "&Egrave; stato generato un nuovo Cart con identificatore { param }}",
+      "updated": "&Egrave; stato aggiornato Cart identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Cart con identificatore {{ param }}"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerCategories": {
+      "home": {
+        "title": "Categories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Dodaj Categories",
+        "createOrEditLabel": "Dodaj lub edytuj: Categories",
+        "notFound": "No Categories found"
+      },
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Categories {{ id }}?"
+      },
+      "detail": {
+        "title": "Categories"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerCategories": {
+      "created": "Utworzono nowy obiekt typu Categories z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Categories z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Categories z identyfikatorem {{ param }}"
+    }
+  }
+}

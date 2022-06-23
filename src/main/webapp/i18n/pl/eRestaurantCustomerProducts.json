@@ -1,0 +1,31 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerProducts": {
+      "home": {
+        "title": "Products",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Dodaj Products",
+        "createOrEditLabel": "Dodaj lub edytuj: Products",
+        "notFound": "No Products found"
+      },
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Products {{ id }}?"
+      },
+      "detail": {
+        "title": "Products"
+      },
+      "id": "Id",
+      "name": "Name",
+      "description": "Description",
+      "image": "Image",
+      "estimatedPreparaingTime": "Estimated Preparaing Time"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerProducts": {
+      "created": "Utworzono nowy obiekt typu Products z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Products z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Products z identyfikatorem {{ param }}"
+    }
+  }
+}

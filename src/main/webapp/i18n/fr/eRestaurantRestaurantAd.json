@@ -1,0 +1,29 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantRestaurantAd": {
+      "home": {
+        "title": "Ads",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Ad",
+        "createOrEditLabel": "Créer ou éditer un Ad",
+        "notFound": "Aucun Ad trouvé"
+      },
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Ad {{ id }} ?"
+      },
+      "detail": {
+        "title": "Ad"
+      },
+      "id": "Id",
+      "url": "Url",
+      "description": "Description"
+    }
+  },
+  "eRestaurantRestaurantApp": {
+    "eRestaurantRestaurantAd": {
+      "created": "Un nouveau Ad a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Ad avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Ad avec l'identifiant {{ param }} a été supprimé"
+    }
+  }
+}

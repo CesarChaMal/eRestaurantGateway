@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerCategories": {
+      "home": {
+        "title": "Categories",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Categories erstellen",
+        "createOrEditLabel": "Categories erstellen oder bearbeiten",
+        "notFound": "Keine Categories gefunden"
+      },
+      "delete": {
+        "question": "Soll Categories {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Categories"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerCategories": {
+      "created": "Categories erstellt mit ID {{ param }}",
+      "updated": "Categories aktualisiert mit ID {{ param }}",
+      "deleted": "Categories gelöscht mit ID {{ param }}"
+    }
+  }
+}

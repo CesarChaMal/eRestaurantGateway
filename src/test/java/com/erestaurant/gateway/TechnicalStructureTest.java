@@ -32,7 +32,6 @@ class TechnicalStructureTest {
         .ignoreDependency(belongToAnyOf(ERestaurantGatewayApp.class), alwaysTrue())
         .ignoreDependency(alwaysTrue(), belongToAnyOf(
             com.erestaurant.gateway.config.Constants.class,
-            com.erestaurant.gateway.config.KafkaProperties.class,
             com.erestaurant.gateway.config.ApplicationProperties.class
         ));
 }

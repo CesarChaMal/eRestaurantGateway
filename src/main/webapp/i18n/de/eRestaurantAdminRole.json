@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantAdminRole": {
+      "home": {
+        "title": "Roles",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Role erstellen",
+        "createOrEditLabel": "Role erstellen oder bearbeiten",
+        "notFound": "Keine Roles gefunden"
+      },
+      "delete": {
+        "question": "Soll Role {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Role"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantAdminApp": {
+    "eRestaurantAdminRole": {
+      "created": "Role erstellt mit ID {{ param }}",
+      "updated": "Role aktualisiert mit ID {{ param }}",
+      "deleted": "Role gelöscht mit ID {{ param }}"
+    }
+  }
+}

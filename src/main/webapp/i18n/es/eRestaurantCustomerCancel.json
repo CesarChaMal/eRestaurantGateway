@@ -1,0 +1,29 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerCancel": {
+      "home": {
+        "title": "Cancels",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Cancel",
+        "createOrEditLabel": "Crear o editar Cancel",
+        "notFound": "Ningún Cancels encontrado"
+      },
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Cancel {{ id }}?"
+      },
+      "detail": {
+        "title": "Cancel"
+      },
+      "id": "Id",
+      "description": "Description",
+      "enabled": "Enabled"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerCancel": {
+      "created": "Un nuevo Cancel ha sido creado con el identificador {{ param }}",
+      "updated": "Un Cancel ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Cancel ha sido eliminado con el identificador {{ param }}"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+<div>
+  <h2 id="page-heading" data-cy="ProductsHeading">
+    <span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerProducts.home.title">Products</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="loadAll()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerProducts.home.refreshListLabel">Refresh List</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-products"
+        [routerLink]="['/products/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerProducts.home.createLabel"> Create a new Products </span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="products?.length === 0">
+    <span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerProducts.home.notFound">No products found</span>
+  </div>
+
+  <div class="table-responsive" id="entities" *ngIf="products && products.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr>
+          <th scope="col"><span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerProducts.id">Id</span></th>
+          <th scope="col"><span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerProducts.name">Name</span></th>
+          <th scope="col"><span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerProducts.description">Description</span></th>
+          <th scope="col"><span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerProducts.image">Image</span></th>
+          <th scope="col">
+            <span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerProducts.estimatedPreparaingTime">Estimated Preparaing Time</span>
+          </th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let products of products; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/products', products.id, 'view']">{{ products.id }}</a>
+          </td>
+          <td>{{ products.name }}</td>
+          <td>{{ products.description }}</td>
+          <td>
+            <a *ngIf="products.image" (click)="openFile(products.image, products.imageContentType)">
+              <img
+                [src]="'data:' + products.imageContentType + ';base64,' + products.image"
+                style="max-height: 30px"
+                alt="products image"
+              />
+            </a>
+            <span *ngIf="products.image">{{ products.imageContentType }}, {{ byteSize(products.image) }}</span>
+          </td>
+          <td>{{ products.estimatedPreparaingTime }}</td>
+          <td class="text-end">
+            <div class="btn-group">
+              <button
+                type="submit"
+                [routerLink]="['/products', products.id, 'view']"
+                class="btn btn-info btn-sm"
+                data-cy="entityDetailsButton"
+              >
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+              </button>
+
+              <button
+                type="submit"
+                [routerLink]="['/products', products.id, 'edit']"
+                class="btn btn-primary btn-sm"
+                data-cy="entityEditButton"
+              >
+                <fa-icon icon="pencil-alt"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+              </button>
+
+              <button type="submit" (click)="delete(products)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                <fa-icon icon="times"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

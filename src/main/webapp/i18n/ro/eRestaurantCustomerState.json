@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerState": {
+      "home": {
+        "title": "States",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate State",
+        "createOrEditLabel": "Creeare sau editare State",
+        "notFound": "No States found"
+      },
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți State {{ id }}?"
+      },
+      "detail": {
+        "title": "State"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerState": {
+      "created": "A fost creată o nouă entitate State cu identificatorul {{ param }}",
+      "updated": "Entitatea State cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Entitatea State cu identificatorul {{ param }} a fost ștearsă"
+    }
+  }
+}

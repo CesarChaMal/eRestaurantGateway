@@ -1,0 +1,29 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerRefunded": {
+      "home": {
+        "title": "Refundeds",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Genera un nuovo Refunded",
+        "createOrEditLabel": "Genera o modifica un Refunded",
+        "notFound": "No Refundeds found"
+      },
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Refunded {{ id }}?"
+      },
+      "detail": {
+        "title": "Refunded"
+      },
+      "id": "Id",
+      "description": "Description",
+      "enabled": "Enabled"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerRefunded": {
+      "created": "&Egrave; stato generato un nuovo Refunded con identificatore { param }}",
+      "updated": "&Egrave; stato aggiornato Refunded identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Refunded con identificatore {{ param }}"
+    }
+  }
+}

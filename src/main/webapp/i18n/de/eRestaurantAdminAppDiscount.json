@@ -1,0 +1,30 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantAdminAppDiscount": {
+      "home": {
+        "title": "App Discounts",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "App Discount erstellen",
+        "createOrEditLabel": "App Discount erstellen oder bearbeiten",
+        "notFound": "Keine App Discounts gefunden"
+      },
+      "delete": {
+        "question": "Soll App Discount {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "App Discount"
+      },
+      "id": "Id",
+      "code": "Code",
+      "description": "Description",
+      "percentage": "Percentage"
+    }
+  },
+  "eRestaurantAdminApp": {
+    "eRestaurantAdminAppDiscount": {
+      "created": "App Discount erstellt mit ID {{ param }}",
+      "updated": "App Discount aktualisiert mit ID {{ param }}",
+      "deleted": "App Discount gelöscht mit ID {{ param }}"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantRestaurantDiscount": {
+      "home": {
+        "title": "Discount",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Dodaj Discount",
+        "createOrEditLabel": "Dodaj lub edytuj: Discount",
+        "notFound": "No Discounts found"
+      },
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Discount {{ id }}?"
+      },
+      "detail": {
+        "title": "Discount"
+      },
+      "id": "Id",
+      "code": "Code",
+      "description": "Description",
+      "percentage": "Percentage"
+    }
+  },
+  "eRestaurantRestaurantApp": {
+    "eRestaurantRestaurantDiscount": {
+      "created": "Utworzono nowy obiekt typu Discount z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Discount z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Discount z identyfikatorem {{ param }}"
+    }
+  }
+}

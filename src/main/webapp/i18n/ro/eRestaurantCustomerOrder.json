@@ -1,0 +1,29 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerOrder": {
+      "home": {
+        "title": "Orders",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Order",
+        "createOrEditLabel": "Creeare sau editare Order",
+        "notFound": "No Orders found"
+      },
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Order {{ id }}?"
+      },
+      "detail": {
+        "title": "Order"
+      },
+      "id": "Id",
+      "description": "Description",
+      "rating": "Rating"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerOrder": {
+      "created": "A fost creată o nouă entitate Order cu identificatorul {{ param }}",
+      "updated": "Entitatea Order cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Entitatea Order cu identificatorul {{ param }} a fost ștearsă"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerClose": {
+      "home": {
+        "title": "Closes",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Close",
+        "createOrEditLabel": "Crear o editar Close",
+        "notFound": "Ningún Closes encontrado"
+      },
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Close {{ id }}?"
+      },
+      "detail": {
+        "title": "Close"
+      },
+      "id": "Id",
+      "description": "Description",
+      "enabled": "Enabled"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerClose": {
+      "created": "Un nuevo Close ha sido creado con el identificador {{ param }}",
+      "updated": "Un Close ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Close ha sido eliminado con el identificador {{ param }}"
+    }
+  }
+}

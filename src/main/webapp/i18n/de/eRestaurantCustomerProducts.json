@@ -1,0 +1,31 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerProducts": {
+      "home": {
+        "title": "Products",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Products erstellen",
+        "createOrEditLabel": "Products erstellen oder bearbeiten",
+        "notFound": "Keine Products gefunden"
+      },
+      "delete": {
+        "question": "Soll Products {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Products"
+      },
+      "id": "Id",
+      "name": "Name",
+      "description": "Description",
+      "image": "Image",
+      "estimatedPreparaingTime": "Estimated Preparaing Time"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerProducts": {
+      "created": "Products erstellt mit ID {{ param }}",
+      "updated": "Products aktualisiert mit ID {{ param }}",
+      "deleted": "Products gelöscht mit ID {{ param }}"
+    }
+  }
+}

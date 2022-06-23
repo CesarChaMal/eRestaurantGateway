@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantRestaurantEmployee": {
+      "home": {
+        "title": "Employees",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Employee erstellen",
+        "createOrEditLabel": "Employee erstellen oder bearbeiten",
+        "notFound": "Keine Employees gefunden"
+      },
+      "delete": {
+        "question": "Soll Employee {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Employee"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantRestaurantApp": {
+    "eRestaurantRestaurantEmployee": {
+      "created": "Employee erstellt mit ID {{ param }}",
+      "updated": "Employee aktualisiert mit ID {{ param }}",
+      "deleted": "Employee gelöscht mit ID {{ param }}"
+    }
+  }
+}

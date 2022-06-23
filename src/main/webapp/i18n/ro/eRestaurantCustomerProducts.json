@@ -1,0 +1,31 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerProducts": {
+      "home": {
+        "title": "Products",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Products",
+        "createOrEditLabel": "Creeare sau editare Products",
+        "notFound": "No Products found"
+      },
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Products {{ id }}?"
+      },
+      "detail": {
+        "title": "Products"
+      },
+      "id": "Id",
+      "name": "Name",
+      "description": "Description",
+      "image": "Image",
+      "estimatedPreparaingTime": "Estimated Preparaing Time"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerProducts": {
+      "created": "A fost creată o nouă entitate Products cu identificatorul {{ param }}",
+      "updated": "Entitatea Products cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Entitatea Products cu identificatorul {{ param }} a fost ștearsă"
+    }
+  }
+}

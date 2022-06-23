@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantRestaurantNotification": {
+      "home": {
+        "title": "Notifications",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Notification",
+        "createOrEditLabel": "Creeare sau editare Notification",
+        "notFound": "No Notifications found"
+      },
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Notification {{ id }}?"
+      },
+      "detail": {
+        "title": "Notification"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantRestaurantApp": {
+    "eRestaurantRestaurantNotification": {
+      "created": "A fost creată o nouă entitate Notification cu identificatorul {{ param }}",
+      "updated": "Entitatea Notification cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Entitatea Notification cu identificatorul {{ param }} a fost ștearsă"
+    }
+  }
+}

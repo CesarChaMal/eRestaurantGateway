@@ -1,0 +1,70 @@
+<div>
+  <h2 id="page-heading" data-cy="CloseHeading">
+    <span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerClose.home.title">Closes</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="loadAll()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerClose.home.refreshListLabel">Refresh List</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-close"
+        [routerLink]="['/close/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerClose.home.createLabel"> Create a new Close </span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="closes?.length === 0">
+    <span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerClose.home.notFound">No closes found</span>
+  </div>
+
+  <div class="table-responsive" id="entities" *ngIf="closes && closes.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr>
+          <th scope="col"><span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerClose.id">Id</span></th>
+          <th scope="col"><span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerClose.description">Description</span></th>
+          <th scope="col"><span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerClose.enabled">Enabled</span></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let close of closes; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/close', close.id, 'view']">{{ close.id }}</a>
+          </td>
+          <td>{{ close.description }}</td>
+          <td>{{ close.enabled }}</td>
+          <td class="text-end">
+            <div class="btn-group">
+              <button type="submit" [routerLink]="['/close', close.id, 'view']" class="btn btn-info btn-sm" data-cy="entityDetailsButton">
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+              </button>
+
+              <button type="submit" [routerLink]="['/close', close.id, 'edit']" class="btn btn-primary btn-sm" data-cy="entityEditButton">
+                <fa-icon icon="pencil-alt"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+              </button>
+
+              <button type="submit" (click)="delete(close)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                <fa-icon icon="times"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantAdminCompositePermission": {
+      "home": {
+        "title": "Composite Permissions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Composite Permission",
+        "createOrEditLabel": "Creeare sau editare Composite Permission",
+        "notFound": "No Composite Permissions found"
+      },
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Composite Permission {{ id }}?"
+      },
+      "detail": {
+        "title": "Composite Permission"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantAdminApp": {
+    "eRestaurantAdminCompositePermission": {
+      "created": "A fost creată o nouă entitate Composite Permission cu identificatorul {{ param }}",
+      "updated": "Entitatea Composite Permission cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Entitatea Composite Permission cu identificatorul {{ param }} a fost ștearsă"
+    }
+  }
+}

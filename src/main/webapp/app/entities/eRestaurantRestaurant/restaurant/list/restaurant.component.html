@@ -1,0 +1,95 @@
+<div>
+  <h2 id="page-heading" data-cy="RestaurantHeading">
+    <span jhiTranslate="eRestaurantGatewayApp.eRestaurantRestaurantRestaurant.home.title">Restaurants</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="loadAll()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="eRestaurantGatewayApp.eRestaurantRestaurantRestaurant.home.refreshListLabel">Refresh List</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-restaurant"
+        [routerLink]="['/restaurant/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="eRestaurantGatewayApp.eRestaurantRestaurantRestaurant.home.createLabel"> Create a new Restaurant </span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="restaurants?.length === 0">
+    <span jhiTranslate="eRestaurantGatewayApp.eRestaurantRestaurantRestaurant.home.notFound">No restaurants found</span>
+  </div>
+
+  <div class="table-responsive" id="entities" *ngIf="restaurants && restaurants.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr>
+          <th scope="col"><span jhiTranslate="eRestaurantGatewayApp.eRestaurantRestaurantRestaurant.id">Id</span></th>
+          <th scope="col"><span jhiTranslate="eRestaurantGatewayApp.eRestaurantRestaurantRestaurant.name">Name</span></th>
+          <th scope="col"><span jhiTranslate="eRestaurantGatewayApp.eRestaurantRestaurantRestaurant.description">Description</span></th>
+          <th scope="col"><span jhiTranslate="eRestaurantGatewayApp.eRestaurantRestaurantRestaurant.image">Image</span></th>
+          <th scope="col"><span jhiTranslate="eRestaurantGatewayApp.eRestaurantRestaurantRestaurant.email">Email</span></th>
+          <th scope="col"><span jhiTranslate="eRestaurantGatewayApp.eRestaurantRestaurantRestaurant.rating">Rating</span></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let restaurant of restaurants; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/restaurant', restaurant.id, 'view']">{{ restaurant.id }}</a>
+          </td>
+          <td>{{ restaurant.name }}</td>
+          <td>{{ restaurant.description }}</td>
+          <td>
+            <a *ngIf="restaurant.image" (click)="openFile(restaurant.image, restaurant.imageContentType)">
+              <img
+                [src]="'data:' + restaurant.imageContentType + ';base64,' + restaurant.image"
+                style="max-height: 30px"
+                alt="restaurant image"
+              />
+            </a>
+            <span *ngIf="restaurant.image">{{ restaurant.imageContentType }}, {{ byteSize(restaurant.image) }}</span>
+          </td>
+          <td>{{ restaurant.email }}</td>
+          <td>{{ restaurant.rating }}</td>
+          <td class="text-end">
+            <div class="btn-group">
+              <button
+                type="submit"
+                [routerLink]="['/restaurant', restaurant.id, 'view']"
+                class="btn btn-info btn-sm"
+                data-cy="entityDetailsButton"
+              >
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+              </button>
+
+              <button
+                type="submit"
+                [routerLink]="['/restaurant', restaurant.id, 'edit']"
+                class="btn btn-primary btn-sm"
+                data-cy="entityEditButton"
+              >
+                <fa-icon icon="pencil-alt"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+              </button>
+
+              <button type="submit" (click)="delete(restaurant)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                <fa-icon icon="times"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

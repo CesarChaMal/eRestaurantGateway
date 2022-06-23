@@ -1,0 +1,29 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerCancel": {
+      "home": {
+        "title": "Cancels",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Cancel",
+        "createOrEditLabel": "Creeare sau editare Cancel",
+        "notFound": "No Cancels found"
+      },
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Cancel {{ id }}?"
+      },
+      "detail": {
+        "title": "Cancel"
+      },
+      "id": "Id",
+      "description": "Description",
+      "enabled": "Enabled"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerCancel": {
+      "created": "A fost creată o nouă entitate Cancel cu identificatorul {{ param }}",
+      "updated": "Entitatea Cancel cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Entitatea Cancel cu identificatorul {{ param }} a fost ștearsă"
+    }
+  }
+}

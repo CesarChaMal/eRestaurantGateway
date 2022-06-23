@@ -1,0 +1,80 @@
+<div>
+  <h2 id="page-heading" data-cy="RefundedHeading">
+    <span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerRefunded.home.title">Refundeds</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="loadAll()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerRefunded.home.refreshListLabel">Refresh List</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-refunded"
+        [routerLink]="['/refunded/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerRefunded.home.createLabel"> Create a new Refunded </span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="refundeds?.length === 0">
+    <span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerRefunded.home.notFound">No refundeds found</span>
+  </div>
+
+  <div class="table-responsive" id="entities" *ngIf="refundeds && refundeds.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr>
+          <th scope="col"><span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerRefunded.id">Id</span></th>
+          <th scope="col"><span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerRefunded.description">Description</span></th>
+          <th scope="col"><span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerRefunded.enabled">Enabled</span></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let refunded of refundeds; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/refunded', refunded.id, 'view']">{{ refunded.id }}</a>
+          </td>
+          <td>{{ refunded.description }}</td>
+          <td>{{ refunded.enabled }}</td>
+          <td class="text-end">
+            <div class="btn-group">
+              <button
+                type="submit"
+                [routerLink]="['/refunded', refunded.id, 'view']"
+                class="btn btn-info btn-sm"
+                data-cy="entityDetailsButton"
+              >
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+              </button>
+
+              <button
+                type="submit"
+                [routerLink]="['/refunded', refunded.id, 'edit']"
+                class="btn btn-primary btn-sm"
+                data-cy="entityEditButton"
+              >
+                <fa-icon icon="pencil-alt"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+              </button>
+
+              <button type="submit" (click)="delete(refunded)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                <fa-icon icon="times"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

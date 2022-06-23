@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerPayment": {
+      "home": {
+        "title": "Payments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Payment",
+        "createOrEditLabel": "Creeare sau editare Payment",
+        "notFound": "No Payments found"
+      },
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerPayment": {
+      "created": "A fost creată o nouă entitate Payment cu identificatorul {{ param }}",
+      "updated": "Entitatea Payment cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Entitatea Payment cu identificatorul {{ param }} a fost ștearsă"
+    }
+  }
+}

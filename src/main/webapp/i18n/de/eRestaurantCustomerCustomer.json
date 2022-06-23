@@ -1,0 +1,32 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerCustomer": {
+      "home": {
+        "title": "Customers",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Customer erstellen",
+        "createOrEditLabel": "Customer erstellen oder bearbeiten",
+        "notFound": "Keine Customers gefunden"
+      },
+      "delete": {
+        "question": "Soll Customer {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Customer"
+      },
+      "id": "Id",
+      "name": "Name",
+      "description": "Description",
+      "image": "Image",
+      "email": "Email",
+      "age": "Age"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerCustomer": {
+      "created": "Customer erstellt mit ID {{ param }}",
+      "updated": "Customer aktualisiert mit ID {{ param }}",
+      "deleted": "Customer gelöscht mit ID {{ param }}"
+    }
+  }
+}

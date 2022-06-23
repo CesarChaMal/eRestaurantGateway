@@ -1,0 +1,29 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantRestaurantAd": {
+      "home": {
+        "title": "Ads",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Ad",
+        "createOrEditLabel": "Creeare sau editare Ad",
+        "notFound": "No Ads found"
+      },
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Ad {{ id }}?"
+      },
+      "detail": {
+        "title": "Ad"
+      },
+      "id": "Id",
+      "url": "Url",
+      "description": "Description"
+    }
+  },
+  "eRestaurantRestaurantApp": {
+    "eRestaurantRestaurantAd": {
+      "created": "A fost creată o nouă entitate Ad cu identificatorul {{ param }}",
+      "updated": "Entitatea Ad cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Entitatea Ad cu identificatorul {{ param }} a fost ștearsă"
+    }
+  }
+}

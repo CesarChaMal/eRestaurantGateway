@@ -1,0 +1,30 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantAdminAppDiscount": {
+      "home": {
+        "title": "App Discounts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate App Discount",
+        "createOrEditLabel": "Creeare sau editare App Discount",
+        "notFound": "No App Discounts found"
+      },
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți App Discount {{ id }}?"
+      },
+      "detail": {
+        "title": "App Discount"
+      },
+      "id": "Id",
+      "code": "Code",
+      "description": "Description",
+      "percentage": "Percentage"
+    }
+  },
+  "eRestaurantAdminApp": {
+    "eRestaurantAdminAppDiscount": {
+      "created": "A fost creată o nouă entitate App Discount cu identificatorul {{ param }}",
+      "updated": "Entitatea App Discount cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Entitatea App Discount cu identificatorul {{ param }} a fost ștearsă"
+    }
+  }
+}

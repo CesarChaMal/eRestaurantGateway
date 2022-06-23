@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantAdminCompositePermission": {
+      "home": {
+        "title": "CompositePermissions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Genera un nuovo Composite Permission",
+        "createOrEditLabel": "Genera o modifica un Composite Permission",
+        "notFound": "No Composite Permissions found"
+      },
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Composite Permission {{ id }}?"
+      },
+      "detail": {
+        "title": "Composite Permission"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantAdminApp": {
+    "eRestaurantAdminCompositePermission": {
+      "created": "&Egrave; stato generato un nuovo Composite Permission con identificatore { param }}",
+      "updated": "&Egrave; stato aggiornato Composite Permission identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Composite Permission con identificatore {{ param }}"
+    }
+  }
+}

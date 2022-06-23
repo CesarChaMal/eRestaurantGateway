@@ -1,0 +1,53 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="products">
+      <h2 data-cy="productsDetailsHeading">
+        <span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerProducts.detail.title">Products</span>
+      </h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerProducts.id">Id</span></dt>
+        <dd>
+          <span>{{ products.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerProducts.name">Name</span></dt>
+        <dd>
+          <span>{{ products.name }}</span>
+        </dd>
+        <dt><span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerProducts.description">Description</span></dt>
+        <dd>
+          <span>{{ products.description }}</span>
+        </dd>
+        <dt><span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerProducts.image">Image</span></dt>
+        <dd>
+          <div *ngIf="products.image">
+            <a (click)="openFile(products.image, products.imageContentType)">
+              <img [src]="'data:' + products.imageContentType + ';base64,' + products.image" style="max-width: 100%" alt="products image" />
+            </a>
+            {{ products.imageContentType }}, {{ byteSize(products.image) }}
+          </div>
+        </dd>
+        <dt>
+          <span jhiTranslate="eRestaurantGatewayApp.eRestaurantCustomerProducts.estimatedPreparaingTime">Estimated Preparaing Time</span>
+        </dt>
+        <dd>
+          <span>{{ products.estimatedPreparaingTime }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/products', products.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

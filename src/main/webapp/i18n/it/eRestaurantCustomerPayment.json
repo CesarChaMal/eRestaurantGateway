@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerPayment": {
+      "home": {
+        "title": "Payments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Genera un nuovo Payment",
+        "createOrEditLabel": "Genera o modifica un Payment",
+        "notFound": "No Payments found"
+      },
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerPayment": {
+      "created": "&Egrave; stato generato un nuovo Payment con identificatore { param }}",
+      "updated": "&Egrave; stato aggiornato Payment identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Payment con identificatore {{ param }}"
+    }
+  }
+}

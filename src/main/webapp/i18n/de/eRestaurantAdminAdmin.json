@@ -1,0 +1,31 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantAdminAdmin": {
+      "home": {
+        "title": "Admins",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Admin erstellen",
+        "createOrEditLabel": "Admin erstellen oder bearbeiten",
+        "notFound": "Keine Admins gefunden"
+      },
+      "delete": {
+        "question": "Soll Admin {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Admin"
+      },
+      "id": "Id",
+      "name": "Name",
+      "description": "Description",
+      "image": "Image",
+      "email": "Email"
+    }
+  },
+  "eRestaurantAdminApp": {
+    "eRestaurantAdminAdmin": {
+      "created": "Admin erstellt mit ID {{ param }}",
+      "updated": "Admin aktualisiert mit ID {{ param }}",
+      "deleted": "Admin gelöscht mit ID {{ param }}"
+    }
+  }
+}

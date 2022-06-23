@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerCategories": {
+      "home": {
+        "title": "Categories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Categories",
+        "createOrEditLabel": "Creeare sau editare Categories",
+        "notFound": "No Categories found"
+      },
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Categories {{ id }}?"
+      },
+      "detail": {
+        "title": "Categories"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerCategories": {
+      "created": "A fost creată o nouă entitate Categories cu identificatorul {{ param }}",
+      "updated": "Entitatea Categories cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Entitatea Categories cu identificatorul {{ param }} a fost ștearsă"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerCustomer": {
+      "home": {
+        "title": "Customers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Customer",
+        "createOrEditLabel": "Creeare sau editare Customer",
+        "notFound": "No Customers found"
+      },
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Customer {{ id }}?"
+      },
+      "detail": {
+        "title": "Customer"
+      },
+      "id": "Id",
+      "name": "Name",
+      "description": "Description",
+      "image": "Image",
+      "email": "Email",
+      "age": "Age"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerCustomer": {
+      "created": "A fost creată o nouă entitate Customer cu identificatorul {{ param }}",
+      "updated": "Entitatea Customer cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Entitatea Customer cu identificatorul {{ param }} a fost ștearsă"
+    }
+  }
+}

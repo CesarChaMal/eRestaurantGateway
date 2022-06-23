@@ -16,7 +16,7 @@ services:
       - SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_OIDC_CLIENT_SECRET=web_app
       - JHIPSTER_SLEEP=60 # gives time for microservices to boot before the gateway, the entire stack will be ready to accept incomming requests.
       - SPRING_ELASTICSEARCH_URIS=http://erestaurantgateway-elasticsearch:9200
-      - KAFKA_BOOTSTRAPSERVERS=kafka:9092
+      - SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS=kafka:9092
     # If you want to expose these ports outside your dev PC,
     # remove the "127.0.0.1:" prefix
     ports:

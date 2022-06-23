@@ -1,0 +1,29 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantCustomerNewOrder": {
+      "home": {
+        "title": "New Orders",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo New Order",
+        "createOrEditLabel": "Crear o editar New Order",
+        "notFound": "Ningún New Orders encontrado"
+      },
+      "delete": {
+        "question": "¿Seguro que quiere eliminar New Order {{ id }}?"
+      },
+      "detail": {
+        "title": "New Order"
+      },
+      "id": "Id",
+      "description": "Description",
+      "enabled": "Enabled"
+    }
+  },
+  "eRestaurantCustomerApp": {
+    "eRestaurantCustomerNewOrder": {
+      "created": "Un nuevo New Order ha sido creado con el identificador {{ param }}",
+      "updated": "Un New Order ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un New Order ha sido eliminado con el identificador {{ param }}"
+    }
+  }
+}

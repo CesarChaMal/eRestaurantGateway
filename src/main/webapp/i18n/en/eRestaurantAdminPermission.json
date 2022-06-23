@@ -1,0 +1,28 @@
+{
+  "eRestaurantGatewayApp": {
+    "eRestaurantAdminPermission": {
+      "home": {
+        "title": "Permissions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Permission",
+        "createOrEditLabel": "Create or edit a Permission",
+        "notFound": "No Permissions found"
+      },
+      "delete": {
+        "question": "Are you sure you want to delete Permission {{ id }}?"
+      },
+      "detail": {
+        "title": "Permission"
+      },
+      "id": "Id",
+      "description": "Description"
+    }
+  },
+  "eRestaurantAdminApp": {
+    "eRestaurantAdminPermission": {
+      "created": "A new Permission is created with identifier {{ param }}",
+      "updated": "A Permission is updated with identifier {{ param }}",
+      "deleted": "A Permission is deleted with identifier {{ param }}"
+    }
+  }
+}
